@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: category
+instructions: null
+name: Categorie
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  source: 'group:9fae0eb4-e7ca-4f4c-8f56-75be613a003f' # project categorieën
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: ctagrey
+instructions: null
+name: CTAgrey
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - ed8430fe-b3db-4d71-a2d6-d81905ede24f # CTAText
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

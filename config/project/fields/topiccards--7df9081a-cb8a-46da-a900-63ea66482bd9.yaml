@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: topiccards
+instructions: null
+name: TopicCards
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 0362dc27-2d22-4571-9456-9842ff0f0ad2 # TopicsContent
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

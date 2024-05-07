@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: investorlist
+instructions: null
+name: Investorlist
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - ed059d9a-e954-4e57-a27f-fd412fe244dc # List
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

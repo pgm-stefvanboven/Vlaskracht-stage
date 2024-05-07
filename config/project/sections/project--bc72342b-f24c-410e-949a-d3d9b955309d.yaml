@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - fc9db18d-0e0d-4811-bf11-99dba01610c5 # Project
+handle: project
+maxAuthors: 1
+name: project
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  4b05b207-5903-4ce1-9112-542d6c4b2bcf: # Vlaskracht
+    enabledByDefault: true
+    hasUrls: true
+    template: projects/_entry.twig
+    uriFormat: 'projects/{slug}'
+structure:
+  maxLevels: null
+  uid: 5231b578-b5a9-49e3-ae82-111b80f399a3
+type: structure

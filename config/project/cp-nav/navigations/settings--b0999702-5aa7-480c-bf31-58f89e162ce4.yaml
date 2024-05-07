@@ -1,0 +1,16 @@
+currLabel: Settings
+customIcon: null
+enabled: true
+handle: settings
+icon: null
+layout: e5e23af0-6c62-45bf-bad7-433ef3cfab1f # Default
+level: 2
+newWindow: false
+parent: 2c4e06e1-3f6a-4c8e-b8ed-a49453efbe1c
+prevLabel: Settings
+prevLevel: 2
+prevParent: 2c4e06e1-3f6a-4c8e-b8ed-a49453efbe1c
+prevUrl: navigation/settings
+sortOrder: 14
+type: plugin
+url: navigation/settings

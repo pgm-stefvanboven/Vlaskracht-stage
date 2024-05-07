@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  29d6df3a-3595-4d54-992a-341f45882958:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e2970f6b-e3d5-4a18-b21a-ecf5366200fc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f3e6a039-e78a-4899-af27-3645233af7c8
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 129f9711-fd7b-4ba9-9aa9-90478428c28a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 01e3f7bb-9e1b-45de-8d1e-631509f528b4
+        userCondition: null
+handle: events
+hasTitleField: true
+icon: ''
+name: Events
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

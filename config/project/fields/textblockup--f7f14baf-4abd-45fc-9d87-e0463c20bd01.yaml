@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: textblockup
+instructions: null
+name: TextBlockUP
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 30232114-18d7-4a5c-beae-3b2830018170 # TextBlockUPContent
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

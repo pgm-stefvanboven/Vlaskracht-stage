@@ -1,0 +1,185 @@
+.related_projects,
+.related_projects_title {
+    padding: 3.2px 172.8px;
+}
+
+.related_projects {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    grid-auto-flow: row;
+    grid-template-areas: "bottom_left bottom_center bottom_right";
+}
+
+.related_projects_title_text {
+    font-family: industry, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #324059;
+}
+
+.bottom_left {
+    grid-area: bottom_left;
+}
+
+.bottom_center {
+    grid-area: bottom_center;
+}
+
+.bottom_right {
+    grid-area: bottom_right;
+}
+
+.card_img,
+.card_img_house,
+.card_img_wind {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/assets/img/rectangle-4-bg-jUA.png);
+    width: 215px;
+    height: 140px;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 1.2rem;
+}
+
+.card_img_house {
+    background-image: url(/assets/img/rectangle-5-bg-FLr.png);
+}
+
+.card_img_wind {
+    background-image: url(/assets/img/rectangle-6-bg-Do4.png);
+}
+
+.custom-rectangle {
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    transform: translateY(-560%);
+    left: 383px;
+}
+
+.house_three {
+    left: 383px;
+}
+
+.wind_three {
+    left: 662px;
+    background-color: #4068B0;
+}
+
+.three {
+    left: 935px;
+}
+
+.custom-vector {
+    z-index: 2;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 215.7px;
+    top: -163px;
+}
+
+.sun,
+.air {
+    left: 220.7px;
+}
+
+.icon {
+    left: 218.7px;
+}
+
+.custom-auto-content-text {
+    max-width: 250px;
+    transform: translateX(11px);
+    margin-top: -30px;
+}
+
+.custom-location {
+    font-family: libre-franklin, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #324059;
+}
+
+.custom-description {
+    font-family: industry, sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #324059;
+}
+
+.rectangle-9-vwp {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    width: 51rem;
+    height: 0.2rem;
+    margin-left: 169px;
+    background-color: #e0e5ed;
+    border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 320px) {
+
+    .related_projects,
+    .related_projects_title {
+        text-align: center;
+        padding: 0;
+    }
+
+    .rectangle-9-vwp {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: auto;
+        margin-top: 2rem;
+    }
+
+    .related_projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "bottom_left"
+            "bottom_center"
+            "bottom_right";
+    }
+
+    .custom-rectangle {
+        left: 85%;
+        transform: translateY(-570%);
+    }
+
+    .card_img,
+    .card_img_house,
+    .card_img_wind {
+        width: 80%;
+        margin-right: 0;
+        margin-left: 1rem;
+    }
+
+    .custom-vector {
+        left: 43.4%;
+        top: auto;
+        transform: translate(-50%, -830%);
+    }
+
+    .custom-location,
+    .custom-description {
+        text-align: center;
+    }
+
+    .custom-description {
+        font-size: 14px;
+    }
+
+    .custom-auto-content-text {
+        max-width: 100%;
+        transform: none;
+        margin-top: -32px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,114 @@
+{% extends '_layouts/_base.twig' %}
+{% set entryQuery = craft.entries().section('about') %}
+
+{% set smallhero = entry.smallhero.all() %}
+
+{% set nodes = craft.navigation.nodes('breadcrumbsabout').all() %}
+
+{% set articleContent = entry.articleContent.all() %}
+
+{% set ctablue = entry.ctablue.all() %}
+
+{% set about = entryQuery.all() %}
+
+{% block content %}
+  <div class="hero-small">
+    <div class="hero-about-left">
+      <p class="hero-left-title">{{ smallhero[0].title }}</p>
+      <div class="highlight-about"></div>
+    </div>
+    <p class="hero-about-text">{{ smallhero[0].text }}</p>
+  </div>
+
+  <div class="breadcrumbs">
+    {% for node in nodes|slice(0, 1) %}
+      <p class="breadcrumb_left">
+        <a href="{{ node.url }}" class="breadcrumb_link">{{ node.title }}</a>
+      </p>
+    {% endfor %}
+
+    <img class="vector-vpv" src="assets/img/vector-oWn.png" />
+
+    {% for node in nodes|slice(1, 1) %}
+      <p class="breadcrumb_right">
+        <a href="{{ node.url }}" class="breadcrumb_link">{{ node.title }}</a>
+      </p>
+    {% endfor %}
+  </div>
+
+  <div class="container">
+    <div class="about_container_top">
+      <div class="about_container_top_left">
+        {% for item in about %}
+          {% for image in item.aboutltop %}
+            <img src="{{ image.url }}" alt="{{ image.title }}" />
+          {% endfor %}
+        {% endfor %}
+      </div>
+      <div class="about_container_top_right">
+        <h3 class="about_container_top_right_title">{{ articleContent[0].title }}</h3>
+        <p class="about_container_top_right_text">{{ articleContent[0].text }}</p>
+
+        <a class="about_btn" href="/investor">
+          Ontmoet ons team <img src="assets/img/right-arrow-orange.svg" alt="right-arrow-orange" />
+          <div class="highlight-btn"></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="about_container_center">
+      <div class="about_container_center_left">
+        <h3 class="about_container_center_left_title">{{ articleContent[1].title }}</h3>
+
+        <p class="about_container_center_left_text">{{ articleContent[1].text }}</p>
+
+        <a class="about_btn center" href="#">
+          Meer informatie <img src="assets/img/right-arrow-orange.svg" alt="right-arrow-orange" />
+          <div class="highlight-btn high-center"></div>
+        </a>
+      </div>
+
+      <div class="about_container_center_right">
+        {% for item in about %}
+          {% for image in item.aboutcright %}
+            <img src="{{ image.url }}" alt="{{ image.title }}" />
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="about_container_bottom">
+      <div class="about_container_bottom_left">
+        {% for item in about %}
+          {% for image in item.aboutlbottom %}
+            <img src="{{ image.url }}" alt="{{ image.title }}" />
+          {% endfor %}
+        {% endfor %}
+      </div>
+      <div class="about_container_bottom_right">
+        <h3 class="about_container_bottom_right_title">{{ articleContent[2].title }}</h3>
+        <p class="about_container_bottom_right_text">{{ articleContent[2].text }}</p>
+
+        <a class="about_btn" href="#">
+          Meer informatie <img src="assets/img/right-arrow-orange.svg" alt="right-arrow-orange" />
+          <div class="highlight-btn high-bottom"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta_section">
+    <div class="cta_left">
+      <p class="cta_left_title">{{ ctablue[0].title }}</p>
+
+      <p class="cta_left_text">{{ ctablue[0].text }}</p>
+    </div>
+    <div class="cta_right">
+      <img class="cta_right_img" src="assets/img/vector-B4r.png" />
+
+      <div class="cta_right_btn">{{ ctablue[1].title }}</div>
+
+      <p class="cta_right_text">{{ ctablue[1].text }}</p>
+    </div>
+  </div>
+{% endblock %}

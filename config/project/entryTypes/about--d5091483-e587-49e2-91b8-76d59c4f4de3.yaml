@@ -1,0 +1,140 @@
+color: null
+fieldLayouts:
+  9a822a11-898f-4dc4-847d-35b97d400667:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 23bae24a-96a6-4a51-ac9e-429cef6f787b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9709c363-dd89-4d57-9fc8-1bd2a15021c3 # SmallHero
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7f6d8302-687e-4704-b628-bd147e04d6db
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a4a26739-07cc-4b47-a988-626bd50af329 # AboutLtop
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6f22cbda-c264-42eb-8782-38ad4f297316
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 998b3965-52e7-4d7a-961e-a6743664e34e # AboutCright
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 500f11ed-8736-4f2c-9caf-66fe44714579
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7ad99665-1fa1-42fc-85d9-c70eb453548b # AboutLbottom
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67e3d7ad-1424-42cb-b785-ff693611fd78
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 30e1aab3-aed1-4ce5-8e2c-0dfed7c9da3d # Article content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4176701-974e-4150-8d02-7b490699ec2e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 786820ae-b39f-437d-b83f-a0148aa07c09 # CTAblue
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a1e8564f-d3fb-4f4b-820f-4e41cd6a7fcc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bfcee294-da97-47a4-a414-b93427dd947c
+        userCondition: null
+handle: about
+hasTitleField: true
+icon: ''
+name: About
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: projectssidebar
+instructions: null
+name: ProjectsSidebar
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 4203aa11-d2d5-48d1-b50f-2ac45994f7bd # SidebarProjectsContent
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

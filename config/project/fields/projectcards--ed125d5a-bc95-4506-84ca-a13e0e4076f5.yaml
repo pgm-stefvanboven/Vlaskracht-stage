@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: projectcards
+instructions: null
+name: ProjectCards
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - d289268b-0cb8-4958-a938-11274d23f575 # ProjectCardContent
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

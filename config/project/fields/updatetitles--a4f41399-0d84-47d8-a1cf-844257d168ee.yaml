@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: updatetitles
+instructions: null
+name: UpdateTitles
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 0474cacf-0ab3-4ec0-98c5-2e693496af04 # UpdateTitlesContent
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

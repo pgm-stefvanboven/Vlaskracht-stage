@@ -1,0 +1,16 @@
+currLabel: Navigation
+customIcon: null
+enabled: true
+handle: navigation
+icon: /var/www/html/vendor/verbb/navigation/src/icon-mask.svg
+layout: e5e23af0-6c62-45bf-bad7-433ef3cfab1f # Default
+level: 1
+newWindow: false
+parent: null
+prevLabel: Navigation
+prevLevel: 1
+prevParent: null
+prevUrl: navigation
+sortOrder: 13
+type: plugin
+url: navigation

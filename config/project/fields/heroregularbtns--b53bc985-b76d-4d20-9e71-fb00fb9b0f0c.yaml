@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: heroregularbtns
+instructions: null
+name: HeroRegularBtns
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 3eb0948d-1ea2-433a-85fb-b835a51f8e84 # BtnsContent
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,202 @@
+{% extends '_layouts/_base.twig' %}
+{% set entryQuery = craft.entries().section('investor') %}
+
+{% set smallhero = entry.smallhero.all() %}
+
+{% set nodes = craft.navigation.nodes('breadcrumbsInvestor').all() %}
+
+{% set investortopcontent = entry.investortopcontent.all() %}
+
+{% set investorlist = entry.investorlist.all() %}
+
+{% set teamcard = entry.teamcard.all() %}
+
+{% set ctablue = entry.ctablue.all() %}
+
+{% set textcolomns = entry.textcolomns.all() %}
+
+{% set ctagrey = entry.ctagrey.all() %}
+
+{% set investor = entryQuery.all() %}
+
+{% block content %}
+  <div class="hero-small">
+    <div class="hero-left">
+      <p class="hero-left-title">{{ smallhero[0].title }}</p>
+      <div class="highlight-inves"></div>
+    </div>
+    <p class="hero-text">{{ smallhero[0].text }}</p>
+  </div>
+
+  <div class="breadcrumbs">
+    {% for node in nodes|slice(0, 1) %}
+      <p class="breadcrumb_left">
+        <a href="{{ node.url }}" class="breadcrumb_link">{{ node.title }}</a>
+      </p>
+    {% endfor %}
+
+    <img class="vector-vpv" src="assets/img/vector-oWn.png" />
+
+    {% for node in nodes|slice(1, 1) %}
+      <p class="breadcrumb_right">
+        <a href="{{ node.url }}" class="breadcrumb_link">{{ node.title }}</a>
+      </p>
+    {% endfor %}
+  </div>
+
+  <div class="cooperative_section">
+    <div class="image_container">
+      <div class="image_container_left">
+        {% for item in investor %}
+          {% for image in item.investorimage %}
+            <img class="image_container_left_img" src="{{ image.url }}" alt="{{ image.title }}" />
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="cooperative_section_content_right">
+      <p class="rci">{{ investortopcontent[0].title }}</p>
+      <p class="ytg">
+        {{ investortopcontent[0].investorsubtxt }} <span class="ytg-sub-1">{{ investortopcontent[0].investortxtblack }}</span>
+      </p>
+      <div class="ul-Uii">
+        <div class="auto-group-ijtg-pna">
+          <div class="li-kw8">
+            {% for item in investor %}
+              {% for image in item.investorcheckicon %}
+                <img class="check-icon" src="{{ image.url }}" alt="{{ image.title }}" />
+              {% endfor %}
+            {% endfor %}
+            <p class="cyL">{{ investorlist[0].listitem }}</p>
+          </div>
+
+          <div class="li-kw8">
+            {% for item in investor %}
+              {% for image in item.investorcheckicon %}
+                <img class="check-icon" src="{{ image.url }}" alt="{{ image.title }}" />
+              {% endfor %}
+            {% endfor %}
+            <p class="cyL">{{ investorlist[1].listitem }}</p>
+          </div>
+
+          <div class="li-kw8">
+            {% for item in investor %}
+              {% for image in item.investorcheckicon %}
+                <img class="check-icon" src="{{ image.url }}" alt="{{ image.title }}" />
+              {% endfor %}
+            {% endfor %}
+            <p class="cyL">{{ investorlist[2].listitem }}</p>
+          </div>
+
+          <div class="li-kw8">
+            {% for item in investor %}
+              {% for image in item.investorcheckicon %}
+                <img class="check-icon" src="{{ image.url }}" alt="{{ image.title }}" />
+              {% endfor %}
+            {% endfor %}
+            <p class="cyL">{{ investorlist[3].listitem }}</p>
+          </div>
+
+          <div class="li-kw8">
+            {% for item in investor %}
+              {% for image in item.investorcheckicon %}
+                <img class="check-icon" src="{{ image.url }}" alt="{{ image.title }}" />
+              {% endfor %}
+            {% endfor %}
+            <p class="cyL">{{ investorlist[4].listitem }}</p>
+          </div>
+
+          <div class="textbutton">
+            <p class="o3p">Ontdek meer over Vlaskracht</p>
+            <img class="icon-pwu" src="assets/img/icon-jW6.png" />
+          </div>
+          <div class="highlight"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="people">
+    <p class="people-text">{{ investor[0].teamintrotitle }}</p>
+    <div class="people-cards">
+      {% for card in teamcard %}
+        <div class="people-card">
+          {% for image in card.teamimage %}
+            <img class="image-NjG" src="{{ image.url }}" alt="{{ image.title }}" />
+          {% endfor %}
+          <div class="people-card-content">
+            <span class="people-card-content-intro">{{ card.teamintro }}</span>
+            <h3 class="people-card-content-title">{{ card.teamname }}</h3>
+            <p class="people-card-content-text">{{ card.teamtext }}</p>
+          </div>
+          {% for icon in card.teamicon %}
+            <img class="icon-X8J" src="{{ icon.url }}" alt="{{ icon.title }}" />
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+    <a class="team-button" href="#">{{ investor[0].teambutton }}</a>
+  </div>
+
+  <div class="cta_section">
+    <div class="cta_left">
+      <p class="cta_left_title">{{ ctablue[0].title }}</p>
+
+      <p class="cta_left_text">{{ ctablue[0].text }}</p>
+    </div>
+    <div class="cta_right">
+      <img class="cta_right_img" src="assets/img/vector-B4r.png" />
+
+      <div class="cta_right_btn">{{ ctablue[1].title }}</div>
+
+      <p class="cta_right_text">{{ ctablue[1].text }}</p>
+    </div>
+  </div>
+
+  <div class="text_columns">
+    <div class="text_column_left">
+      <h2 class="text_column_left_title">{{ textcolomns[0].title }}</h2>
+
+      <p class="text_column_left_text_up">
+        {{ textcolomns[0].textup }} <span class="black">{{ textcolomns[0].investortxtblack }}</span> {{ textcolomns[0].textend }}
+      </p>
+
+      <p class="text_column_left_text_down">{{ textcolomns[0].textdown }}</p>
+    </div>
+
+    <div class="text_column_right">
+      <h2 class="text_column_right_title">{{ textcolomns[1].title }}</h2>
+
+      <p class="text_column_right_text">
+        {{ textcolomns[1].textup }} <span class="black">{{ textcolomns[1].investortxtblack }}</span> {{ textcolomns[1].textend }}
+      </p>
+
+      <div class="textbutton">
+        <p class="o3p-txt">{{ textcolomns[1].investtxtbutton }}</p>
+        {% for icon in textcolomns %}
+          {% for image in icon.investtxtbtnicon %}
+            <img class="icon-pwu" src="{{ image.url }}" alt="{{ image.title }}" />
+          {% endfor %}
+        {% endfor %}
+      </div>
+      <div class="highlight-txt"></div>
+    </div>
+  </div>
+
+  <section class="newsletter">
+    <div class="newsletter_content">
+      {% for background in ctagrey %}
+        {% for image in background.ctabackground %}
+          <img class="newsletter_background_image" src="{{ image.url }}" alt="{{ image.title }}" />
+        {% endfor %}
+      {% endfor %}
+      <div class="newsletter_text">
+        <h2 class="newsletter_title">{{ ctagrey[0].title }}</h2>
+
+        <p class="newsletter_text">{{ ctagrey[0].text }}</p>
+
+        <a href="#" class="newsletter_btn">{{ ctagrey[0].ctabtn }}</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

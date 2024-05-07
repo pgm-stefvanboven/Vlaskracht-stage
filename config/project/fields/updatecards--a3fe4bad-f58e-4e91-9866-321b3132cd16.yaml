@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: updatecards
+instructions: null
+name: UpdateCards
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - c99a9813-0828-4dfc-9826-ec9794752d1a # UpdatesContent
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

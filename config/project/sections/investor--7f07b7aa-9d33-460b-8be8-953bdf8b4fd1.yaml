@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - a0bd5b38-fec1-46c8-9b03-8e6474eb1cfc # Investor
+handle: investor
+maxAuthors: 1
+name: Investor
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  4b05b207-5903-4ce1-9112-542d6c4b2bcf: # Vlaskracht
+    enabledByDefault: true
+    hasUrls: true
+    template: investor/index.twig
+    uriFormat: investor
+type: single

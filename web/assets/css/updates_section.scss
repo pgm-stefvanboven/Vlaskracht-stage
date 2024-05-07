@@ -1,0 +1,305 @@
+.updates_and_fb {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 8rem;
+}
+
+/*cards side by side styling*/
+.updates_and_fb_content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.updates_and_fb_content_left_cards {
+    display: flex;
+    gap: 20px;
+}
+
+.updates_and_fb_titles {
+    display: flex;
+    width: 100%;
+}
+
+.updates_and_fb_title {
+    font-family: industry, sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: #4068B0;
+    margin-bottom: 20px;
+}
+
+.updates_and_fb_title_left {
+    display: flex;
+    width: 263%;
+}
+
+.updates_and_fb_title_right {
+    width: 100%;
+}
+
+/* updates_and_fb_content styling */
+.updates_and_fb_content {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* production news card styling*/
+.updates_and_fb_content_card_left {
+    display: flex;
+    align-items: center;
+}
+
+.updates_and_fb_production_news_card {
+    width: 268px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.updates_and_fb_production_news_card_image img {
+    width: 100%;
+    height: auto;
+}
+
+.updates_and_fb_production_news_card_content {
+    padding: 20px;
+}
+
+.updates_and_fb_production_news_card_date,
+.updates_and_fb_news_card_date {
+    font-family: libre-franklin, sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #8491A9;
+}
+
+.updates_and_fb_production_news_card_title {
+    font-family: industry, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: #107F21;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.updates_and_fb_production_news_card_text {
+    font-family: libre-franklin, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.updates_and_fb_production_news_card_link_section {
+    display: flex;
+    align-items: center;
+}
+
+.updates_and_fb_production_news_card_link {
+    font-family: libre-franklin, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #107F21;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.updates_and_fb_production_news_card_link:hover {
+    color: #0056b3;
+}
+
+.news_card_line {
+    margin-left: 18px;
+    margin-right: 18px;
+    width: 60px;
+    border-top: 1px solid #107F21;
+}
+
+.news_card_link_icon {
+    width: 20px;
+    height: 20px;
+}
+
+/*Team card styling*/
+.updates_and_fb_content_card_middle {
+    display: flex;
+}
+
+.updates_and_fb_team_card {
+    width: 268px;
+    height: 400px;
+    border: 1px solid #E0E5EE;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center; 
+}
+
+.updates_and_fb_team_card_image img {
+    border-radius: 50%;
+    width: 145px;
+    height: 145px;
+    margin: 20px auto;
+    display: block;
+}
+
+.updates_and_fb_team_card_content {
+    padding: 20px;
+}
+
+.updates_and_fb_team_card_intro {
+    font-family: industry, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #666666;
+}
+
+.updates_and_fb_team_card_title {
+    font-family: industry, sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    color: #324059;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.updates_and_fb_team_card_text {
+    font-family: libre-franklin, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.updates_and_fb_team_card_link_section {
+    display: flex;
+    justify-content: center;
+}
+
+.updates_and_fb_team_card_link {
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.updates_and_fb_team_card_link:hover {
+    color: #007bff;
+}
+
+.team_card_link_icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* news card styling*/
+.updates_and_fb_content_card_right {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.updates_and_fb_news_card {
+    width: 268px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.updates_and_fb_news_card_image img {
+    width: 100%;
+    height: auto;
+}
+
+.updates_and_fb_news_card_content {
+    padding: 20px;
+}
+
+.updates_and_fb_news_card_title {
+    font-family: industry, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: #4068B0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.updates_and_fb_news_card_text {
+    font-family: libre-franklin, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 20.5px;
+}
+
+.updates_and_fb_news_card_link_section {
+    display: flex;
+    align-items: center;
+}
+
+.updates_and_fb_news_card_link {
+    font-family: libre-franklin, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8491A9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.updates_and_fb_news_card_link:hover {
+    color: #0056b3;
+}
+
+.news_card_line {
+    margin-left: 18px;
+    margin-right: 18px;
+    width: 60px;
+    border-top: 1px solid #8491A9;
+}
+
+/* facebook section styling */
+.updates_and_fb_content_right {
+    width: 360px;
+    height: 400px;
+    background-color: #F1F4F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+.text {
+    font-family: libre-franklin, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8491A9;
+}
+
+.link {
+    font-family: libre-franklin, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4068B0;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}

@@ -1,0 +1,110 @@
+color: null
+fieldLayouts:
+  4a96851d-5e59-406e-84c9-aaf198c0484e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ba360dd4-858d-4874-83ab-b7e4899863f6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 78ad08f9-1374-4c84-b318-56d54641c4f8 # ProjectCardImage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 58859b05-7ee1-4e4e-9465-bf5f166b7822
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 803b30ab-24fb-4614-ba67-bf24e5fc13d6 # ProjectCardIcon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 283e4dcb-8bfe-4572-94e7-bddee78ef358
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6a627c16-8add-4ee5-b498-9c2c3361a1ea # ProjectCardIntro
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7c64a597-a818-44cd-8590-8c4fd56452b0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8d97c9d8-e1c6-49ab-9226-b60009c53c2d # ProjectCardTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2f14395d-9960-43e3-9493-07048ed3644e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c07d10fc-656f-4134-96b6-6ce3ae4d7e17
+        userCondition: null
+handle: projectcardcontent
+hasTitleField: true
+icon: ''
+name: ProjectCardContent
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

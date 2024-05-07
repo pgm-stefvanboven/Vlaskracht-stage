@@ -1,0 +1,16 @@
+currLabel: Sherlock
+customIcon: null
+enabled: true
+handle: sherlock
+icon: /var/www/html/vendor/putyourlightson/craft-sherlock/src/icon-mask.svg
+layout: 8fe4ecc2-abed-47a7-927a-f41f14458530
+level: 1
+newWindow: false
+parent: null
+prevLabel: Sherlock
+prevLevel: 1
+prevParent: null
+prevUrl: sherlock
+sortOrder: 8
+type: plugin
+url: sherlock

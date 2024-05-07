@@ -1,0 +1,64 @@
+defaultPlacement: end
+fieldLayouts:
+  6e4009cb-b4d1-41b0-a45a-9b8541dfa486:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: be6b9745-f06a-46db-a203-819ea73e1ff2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 803b30ab-24fb-4614-ba67-bf24e5fc13d6 # ProjectCardIcon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 142742a8-28dd-46e9-9cc7-dedfaa3c6435
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e747d57c-d52d-480a-b800-5c04a5766afc
+        userCondition: null
+handle: categories
+name: 'project categorieën'
+siteSettings:
+  4b05b207-5903-4ce1-9112-542d6c4b2bcf: # Vlaskracht
+    hasUrls: true
+    template: projects/index.twig
+    uriFormat: 'projects/cat/{slug}'
+structure:
+  maxLevels: 2
+  uid: 3b767bd7-be1d-4c2d-b6ff-b072c9f72ea7

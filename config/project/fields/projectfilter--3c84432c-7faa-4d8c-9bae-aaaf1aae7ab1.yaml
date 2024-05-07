@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: projectfilter
+instructions: null
+name: ProjectFilter
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 912bf8d4-cbc5-43b5-bf07-e18540bc7238 # FilterProjectsContent
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

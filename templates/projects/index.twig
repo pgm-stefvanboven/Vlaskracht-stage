@@ -1,0 +1,211 @@
+{% extends '_layouts/_projects.twig' %}
+
+{% set entryQuery = craft.entries().section('project') %}
+
+{% if category is defined %}
+  {% set entry = craft.entries.section('projects').one() %}
+  {% set entryQuery = entryQuery.relatedTo(category) %}
+{% endif %}
+
+{% set smallhero = entry.smallhero.one() %}
+
+{% set nodes = craft.navigation.nodes('breadcrumbsprojects').all() %}
+
+{% set categories = craft.categories().group('categories').all() %}
+
+{% set projectfilter = entry.projectfilter.all() %}
+
+{% set sidebartitle = entry.sidebartitle %}
+
+{% set projectssidebar = entry.projectssidebar.all() %}
+
+{% set sidebarprojectstext = entry.sidebarprojectstext.all() %}
+
+{% set ctablue = entry.ctablue.all() %}
+
+{% set ctagrey = entry.ctagrey.all() %}
+
+{% set projects = entryQuery.all() %}
+
+{% block content %}
+  <div class="hero-small">
+    <div class="hero-projects-left">
+      <p class="hero-left-title-projects">{{ smallhero.title }}</p>
+      <div class="highlight-projects"></div>
+    </div>
+    <p class="hero-text">{{ smallhero.text }}</p>
+  </div>
+
+  <div class="breadcrumbs">
+    {% for node in nodes|slice(0, 1) %}
+      <p class="breadcrumb_left">
+        <a href="{{ node.url }}" class="breadcrumb_link">{{ node.title }}</a>
+      </p>
+    {% endfor %}
+
+    <img class="vector-vpv" src="assets/img/vector-oWn.png" />
+
+    {% for node in nodes|slice(1, 1) %}
+      <p class="breadcrumb_right">
+        <a href="{{ node.url }}" class="breadcrumb_link">{{ node.title }}</a>
+      </p>
+    {% endfor %}
+  </div>
+
+  <div class="filters_section">
+    <div class="filter_section_checkbox">
+    <div class="{{ craft.app.request.fullUri == 'projects' ? 'checkbox_check' : '' }}"></div>
+    </div>
+    <a href="/projects" class="filter_section_link">Alle projecten</a>
+    {% for category in categories %}
+      <div class="filter_section_checkbox">
+        <div class="{{ craft.app.request.fullUri == category.uri ? 'checkbox_check' : '' }}"></div>
+      </div>
+      <a href="{{ category.url }}" class="filter_section_link">{{ category.title }}</a>
+    {% endfor %}
+  </div>
+
+  <div class="container">
+    <div class="projects">
+      {% for project in projects %}
+        <div class="custom-project-item">
+          <div class="custom-auto-content">
+            {% if project.image|length %}
+              <div class="card_img" style="background-image: url('{{ project.image[0].getUrl() }}');"></div>
+            {% endif %}
+            {% set projectCat = project.category.one() %}
+            {% set windColor = '' %}
+            {% if projectCat and projectCat.slug == 'windenergie' %}
+              {% set windColor = '#4068B0' %}
+            {% endif %}
+            <div class="custom-rectangle customrectangle_{{ projectCat ? projectCat.slug : '' }}" style="background-color: {% if windColor %}{{ windColor }}{% endif %};"></div>
+            {% if projectCat %}
+              {% set icon = projectCat.projectcardicon.one() %}
+              {% if icon %}
+                <img class="custom-vector" src="{{ icon.url }}" alt="{{ icon.title }}" />
+              {% endif %}
+            {% endif %}
+          </div>
+          <div class="custom-auto-content-text">
+            <p class="custom-location">{{ project.projectcardintro }}</p>
+            <p class="custom-description">
+              <a href="{{ project.url }}" class="proLink">{{ project.title }}</a>
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="custom-sidebar">
+      <div class="stats-section">
+        <div class="stats-section__title">
+          <h2 class="stats-section__title__text">{{ sidebartitle }}</h2>
+        </div>
+        <div class="stats-section__content__top">
+          <div class="stats-section__content__item_top_left">
+            {% for image in projectssidebar[0].sidebprojectsicon %}
+              <img class="stats-section__content__item__icon" src="{{ image.url }}" alt="{{ image.title }}" />
+            {% endfor %}
+            <div class="stats-section__content">
+              <p class="stats-section__content__item__number">{{ projectssidebar[0].sidebprojectsnumber }}</p>
+              <p class="stats-section__content__item__text center">{{ projectssidebar[0].sidebprojectscardstext }}</p>
+            </div>
+          </div>
+
+          <div class="stats-section__content__item_top_right">
+            {% for image in projectssidebar[1].sidebprojectsicon %}
+              <img class="stats-section__content__item__icon" src="{{ image.url }}" alt="{{ image.title }}" />
+            {% endfor %}
+            <p class="stats-section__content__item__number">{{ projectssidebar[1].sidebprojectsnumber }}</p>
+            <p class="stats-section__content__item__text">{{ projectssidebar[1].sidebprojectscardstext }}</p>
+          </div>
+
+          <div class="stats-section__content__item_bottom_left">
+            {% for image in projectssidebar[2].sidebprojectsicon %}
+              <img class="stats-section__content__item__icon" src="{{ image.url }}" alt="{{ image.title }}" />
+            {% endfor %}
+            <div class="stats-section__content">
+              <p class="stats-section__content__item__number">{{ projectssidebar[2].sidebprojectsnumber }}</p>
+              <p class="stats-section__content__item__text center">{{ projectssidebar[2].sidebprojectscardstext }}</p>
+            </div>
+          </div>
+
+          <div class="stats-section__content__item_bottom_right">
+            {% for image in projectssidebar[3].sidebprojectsicon %}
+              <img class="stats-section__content__item__icon cloud" src="{{ image.url }}" alt="{{ image.title }}" />
+            {% endfor %}
+            <p class="stats-section__content__item__number">{{ projectssidebar[3].sidebprojectsnumber }}</p>
+            <p class="stats-section__content__item__text">{{ projectssidebar[3].sidebprojectscardstext }}</p>
+          </div>
+
+          <div class="stats-section__content__item_bottom">
+            <div class="stats-section__content__item_bottom-section_left">
+              {% for image in projectssidebar[4].sidebprojectsicon %}
+                <img class="icon_top_left" src="{{ image.url }}" alt="{{ image.title }}" />
+              {% endfor %}
+
+              {% for image in projectssidebar[4].sidebprojectsicon %}
+                <img class="icon_top_right" src="{{ image.url }}" alt="{{ image.title }}" />
+              {% endfor %}
+
+              {% for image in projectssidebar[4].sidebprojectsicon %}
+                <img class="icon_bottom_center" src="{{ image.url }}" alt="{{ image.title }}" />
+              {% endfor %}
+            </div>
+
+            <div class="stats-section__content__item_bottom-section_right">
+              <p class="stats-section__content__item__number">{{ projectssidebar[4].sidebprojectsnumber }}</p>
+
+              <p class="stats-section__content__item__text txt-container">{{ projectssidebar[4].sidebprojectscardstext }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-section__content__bottom">
+          <div class="stats-section__content__item">
+            <p class="stats-section__content__item__text bottom">{{ sidebarprojectstext[0].sidebprojectstext }}</p>
+          </div>
+
+          <div class="stats-section__content__item">
+            <p class="stats-section__content__item__text button_txt">
+              {{ sidebarprojectstext[0].sidebprojectstextlink }}
+              {% for image in sidebarprojectstext[0].sidebprojectslinkicon %}
+                <img class="stats-section__content__item__arrow__icon" src="{{ image.url }}" alt="{{ image.title }}" />
+              {% endfor %}
+            </p>
+            <div class="highlight-project_link"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <div class="cta-section__content">
+      <div class="cta-section__title">
+        <h2>{{ ctablue[0].title }}</h2>
+      </div>
+
+      <div class="cta-section__button">
+        <a href="#" class="cta-section__button__link">{{ ctablue[0].text }}</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="newsletter projects-space">
+    <div class="newsletter_content">
+      {% for background in ctagrey %}
+        {% for image in background.ctabackground %}
+          <img class="newsletter_background_image" src="{{ image.url }}" alt="{{ image.title }}" />
+        {% endfor %}
+      {% endfor %}
+      <div class="newsletter_text">
+        <h2 class="newsletter_title">{{ ctagrey[0].title }}</h2>
+
+        <p class="newsletter_text">{{ ctagrey[0].text }}</p>
+
+        <a href="#" class="newsletter_btn">{{ ctagrey[0].ctabtn }}</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

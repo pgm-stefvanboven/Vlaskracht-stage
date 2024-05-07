@@ -1,0 +1,170 @@
+color: null
+fieldLayouts:
+  47c45b5f-a4e0-40a0-9b6b-888f4a3ab94e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9f070da6-0ee4-41d1-8597-5be64037d5d8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 84199727-6a0f-4a9c-9882-acfdab1393b1 # TopicTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: de221307-c088-4387-a436-53762b41e7c1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 956673b4-24ab-40b0-ae7e-4f0512832f58 # BoldTopicTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 75223332-218d-4ce8-8bac-f476135fb01c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 84199727-6a0f-4a9c-9882-acfdab1393b1 # TopicTitle
+            handle: topictitle2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: de8444bf-ee3e-478f-a2ff-1d8c39694488
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 956673b4-24ab-40b0-ae7e-4f0512832f58 # BoldTopicTitle
+            handle: boldtopictitle2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a80bbed3-248f-4c48-9b80-3599fccd9cc9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 84199727-6a0f-4a9c-9882-acfdab1393b1 # TopicTitle
+            handle: topictitle3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0deaf58d-225e-49ea-b347-36d07667035b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e3f09b19-41e4-44c2-8814-782a31435622 # text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f7da0c48-4058-4e12-81fd-2b5b1918a768
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 163d0d46-0f4e-41dd-a5cf-c4e876754740 # TopicLinkTxt
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b97d6860-927c-43a4-836f-b02246412cdf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 467e5b15-78ed-4f8a-b527-31dfcc1772b6 # TopicLinkIcon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 850aca03-b6eb-448a-ba20-c1260cb4acf2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 072308da-5aa2-4b96-aa66-d3603e9465e3
+        userCondition: null
+handle: topicscontent
+hasTitleField: true
+icon: ''
+name: TopicsContent
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

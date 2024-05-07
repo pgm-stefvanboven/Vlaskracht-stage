@@ -1,0 +1,30 @@
+{# get navigation #}
+{% set nodes = craft.navigation.nodes('mainNavigation').all() %}
+
+<nav class="nav_container">
+  <div class="navigation">
+    <div class="nav__menu">
+      <ul class="nav__list">
+        <li>
+          {% for node in nodes|slice(0, 1) %}
+            <a href="{{ node.url }}" class="nav__list__item">{{ node.title }}</a>
+          {% endfor %}
+        </li>
+        <li>
+          {% for node in nodes|slice(1, 1) %}
+            <a href="{{ node.url }}" class="nav__list__item">{{ node.title }} <img class="arrow-down-icon" src="/assets/img/arrow-drop-down-line.svg" /></a>
+          {% endfor %}
+        </li>
+        <li>
+          <a href="#" class="nav__list__item">Nieuws</a>
+        </li>
+        <li>
+          <a href="#" class="nav__list__item">Contact</a>
+        </li>
+        {% for node in nodes|slice(2, 1) %}
+          <a href="{{ node.url }}" class="button">{{ node.title }}</a>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

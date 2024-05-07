@@ -1,0 +1,461 @@
+dateModified: 1714743763
+email:
+  fromEmail: stefvboven2020@outlook.com
+  fromName: Vlaskracht
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  hardDisk:
+    hasUrls: true
+    name: 'Hard Disk'
+    settings:
+      path: '@webroot/uploads/images'
+    type: craft\fs\Local
+    url: '@web/uploads/images'
+meta:
+  __names__:
+    0b215ba8-bb2a-4bdb-8563-54c937d5b26b: TextcolomnsInvest # TextcolomnsInvest
+    0c870a2a-56f8-4176-a192-ca2e7eacc002: Projects # Projects
+    01b6e081-c61e-42ac-90b8-229609597188: Image # Image
+    1c52fdcf-e690-45b4-b3e9-c9ad699deb6f: HomeCTAgrey # HomeCTAgrey
+    2c605d7d-4ba5-412d-ad9c-240bf4b6ca45: SideBarProjectsTextContent # SideBarProjectsTextContent
+    3a326286-58ad-4262-a726-8690fcc92a4e: Listitem # Listitem
+    3aed8b1d-eae1-40e0-af94-bbf74b2beafb: Categorie # Categorie
+    3c84432c-7faa-4d8c-9bae-aaaf1aae7ab1: ProjectFilter # ProjectFilter
+    3d92d2b4-b88c-49fd-8f33-bf3df1b7b290: SideBarDetail # SideBarDetail
+    3eb0948d-1ea2-433a-85fb-b835a51f8e84: BtnsContent # BtnsContent
+    4b05b207-5903-4ce1-9112-542d6c4b2bcf: Vlaskracht # Vlaskracht
+    4d147ac2-f809-4f16-9e2a-afbf7b9ae562: TeamIcon # TeamIcon
+    4f658b0e-c32b-4806-9008-3087ba43a23f: Investorcheckicon # Investorcheckicon
+    4f883094-0f81-4619-8199-e3aeb1c24fab: InvestorImage # InvestorImage
+    5a55a691-8902-4783-b72d-91581ea58f38: TeamCard # TeamCard
+    5adac130-d8e3-46b2-a7ec-f885b9cf5889: CTABtn # CTABtn
+    5bf23173-6549-4786-8736-fb7a6b460530: SBDetailTitle # SBDetailTitle
+    6a9a44b3-9cd2-4c36-9d33-a76be146f218: SideBprojectsLinkIcon # SideBprojectsLinkIcon
+    6a627c16-8add-4ee5-b498-9c2c3361a1ea: ProjectCardIntro # ProjectCardIntro
+    06b56aa8-948a-4da0-9170-f3a550d08102: SideBprojectsNumber # SideBprojectsNumber
+    6f82d04f-2d31-48c3-ab72-a5203548283e: TextColomns # TextColomns
+    7ad99665-1fa1-42fc-85d9-c70eb453548b: AboutLbottom # AboutLbottom
+    7df9081a-cb8a-46da-a900-63ea66482bd9: TopicCards # TopicCards
+    7e0e240b-1dd8-4d15-ac19-659d263d9360: Home # Home
+    7f07b7aa-9d33-460b-8be8-953bdf8b4fd1: Investor # Investor
+    8a9164e2-ac66-4e61-9a82-fd9953c6f96c: CTAgrey # CTAgrey
+    8b58e592-eeb7-42de-9815-948432dbb72e: Images # Images
+    8d97c9d8-e1c6-49ab-9226-b60009c53c2d: ProjectCardTitle # ProjectCardTitle
+    9ce66c85-f1e0-4f92-86be-654858c316f9: RegularHero # RegularHero
+    9fae0eb4-e7ca-4f4c-8f56-75be613a003f: 'project categorieën' # project categorieën
+    21b7e4db-4b47-4e7e-b521-9ad00ba8b2a4: SideBprojectsTextLink # SideBprojectsTextLink
+    024fbfa4-6deb-424c-8105-73d3cd3d5dc9: TextUP # TextUP
+    30e1aab3-aed1-4ce5-8e2c-0dfed7c9da3d: 'Article content' # Article content
+    38ef4982-55d9-4ee9-b719-c09461091c0b: InvestTxtButton # InvestTxtButton
+    46e6d115-f1af-4509-af06-5efbe5af8f19: Projects # Projects
+    58aedeff-c546-44ee-af83-ca11ea42cb97: SideBprojectsTitle # SideBprojectsTitle
+    58dac663-5e0a-4b72-865d-f1f539e4bbf3: SideBarDetailContent # SideBarDetailContent
+    64f673c7-d1a8-4bbb-917a-5fc17fd6907b: SideBarTitle # SideBarTitle
+    76b5ff93-1ddf-4cf1-9c9f-033fe27fc253: SideBarProjectsText # SideBarProjectsText
+    78ad08f9-1374-4c84-b318-56d54641c4f8: ProjectCardImage # ProjectCardImage
+    79d8cb45-1dcf-406e-b489-fd99e754e811: SBDetailText # SBDetailText
+    83f8f2ca-a329-4653-97a3-f90e8399cfcc: CTABackground # CTABackground
+    100db3e3-89b0-40fa-adf0-6803be9da7b6: TextBlockDown # TextBlockDown
+    163d0d46-0f4e-41dd-a5cf-c4e876754740: TopicLinkTxt # TopicLinkTxt
+    00345bd5-deac-4a1e-9163-51b5e9a847b3: UpdateTitle # UpdateTitle
+    0362dc27-2d22-4571-9456-9842ff0f0ad2: TopicsContent # TopicsContent
+    467e5b15-78ed-4f8a-b527-31dfcc1772b6: TopicLinkIcon # TopicLinkIcon
+    0474cacf-0ab3-4ec0-98c5-2e693496af04: UpdateTitlesContent # UpdateTitlesContent
+    551c1868-ee5c-47d5-93e4-682a60ede665: UpdateLinkIcon # UpdateLinkIcon
+    705dc81b-0712-4309-a248-a37bd8d132c1: TextSection # TextSection
+    803b30ab-24fb-4614-ba67-bf24e5fc13d6: ProjectCardIcon # ProjectCardIcon
+    0808b9a2-1852-4655-a738-0b7e4e1c6bef: Contact # Contact
+    912bf8d4-cbc5-43b5-bf07-e18540bc7238: FilterProjectsContent # FilterProjectsContent
+    998b3965-52e7-4d7a-961e-a6743664e34e: AboutCright # AboutCright
+    1097ff49-88a9-4253-a3a3-01d7f9fd0963: Investortxtblack # Investortxtblack
+    1541d902-e0a3-4355-ab0e-e6e4cbc116c6: SBDetailIcon # SBDetailIcon
+    1894f274-b687-4f43-85a6-29750c124c88: SideBProjectsIcon # SideBProjectsIcon
+    1912bc89-f19b-4cc3-af9c-a05ef939647d: BreadcrumbsInvestor # BreadcrumbsInvestor
+    4156ef0f-7ed1-4ba4-b5ff-3e62593c04a3: Investorlist # Investorlist
+    4203aa11-d2d5-48d1-b50f-2ac45994f7bd: SidebarProjectsContent # SidebarProjectsContent
+    07127b5c-ad72-4cae-96a0-4c385b453000: InvestorTopContent # InvestorTopContent
+    7131cbbc-052f-443d-ad8b-2b6b19e21374: Home # Home
+    9709c363-dd89-4d57-9fc8-1bd2a15021c3: SmallHero # SmallHero
+    9811bb8e-23ee-4fa6-9aa2-09e50ed3c30b: SideBarImage # SideBarImage
+    49459d99-5f86-4a3e-83a0-16fe37b2c585: UpdateText # UpdateText
+    56634d65-8e18-4f94-987b-2561e72b34e9: UpdateIntro # UpdateIntro
+    138121f2-e6f5-4e2e-91a0-04a1e7837cfc: TeamImage # TeamImage
+    786820ae-b39f-437d-b83f-a0148aa07c09: CTAblue # CTAblue
+    956673b4-24ab-40b0-ae7e-4f0512832f58: BoldTopicTitle # BoldTopicTitle
+    1604959c-6df1-4684-aacf-09987d70ad51: TeamButton # TeamButton
+    09482042-a7a0-480d-ac53-c8a2507bd63b: DetailTitle # DetailTitle
+    30232114-18d7-4a5c-beae-3b2830018170: TextBlockUPContent # TextBlockUPContent
+    58400971-e11b-4a97-8349-8b4abec72d89: breadcrumbsAbout # breadcrumbsAbout
+    84199727-6a0f-4a9c-9882-acfdab1393b1: TopicTitle # TopicTitle
+    a0bd5b38-fec1-46c8-9b03-8e6474eb1cfc: Investor # Investor
+    a3fe4bad-f58e-4e91-9866-321b3132cd16: UpdateCards # UpdateCards
+    a4a26739-07cc-4b47-a988-626bd50af329: AboutLtop # AboutLtop
+    a4f41399-0d84-47d8-a1cf-844257d168ee: UpdateTitles # UpdateTitles
+    a9813541-c4c0-4a93-941b-f72a57d1b0a8: TextEnd # TextEnd
+    ac5f2e51-f3f0-46c1-ad5a-a583cbf0ec30: TextDown # TextDown
+    aca62386-0b9f-440a-84fa-45f843407eaa: TeamText # TeamText
+    add1fbd4-e5ee-40d3-9131-dfef0acbea79: ProjectsSidebar # ProjectsSidebar
+    b7e55572-223d-4499-9ead-ed15e5ac7b94: SideBprojectsCardsText # SideBprojectsCardsText
+    b53bc985-b76d-4d20-9e71-fb00fb9b0f0c: HeroRegularBtns # HeroRegularBtns
+    b555ced1-4411-488b-9245-dd64e08288b7: InvestTxtBtnIcon # InvestTxtBtnIcon
+    b5191ea8-5dc2-4bb0-89d5-6ee715cb7963: BreadcrumbsProjects # BreadcrumbsProjects
+    b356393f-4f92-45b4-a88a-1aa70939881e: About # About
+    bc72342b-f24c-410e-949a-d3d9b955309d: project # project
+    c00f1a20-8763-430a-a7e6-abee6f7ff289: TeamContent # TeamContent
+    c4d52aab-5cee-4b4f-bdea-eb5cfadfa952: TextBlockDownContent # TextBlockDownContent
+    c8fe437c-0951-46d1-8703-d28bd3fd4254: Vlaskracht # Vlaskracht
+    c9ed8f00-54e0-42da-8b5f-85af1a051d0a: Text # Text
+    c39b4d69-a128-4155-83eb-7696ed752f0a: 'Main navigation' # Main navigation
+    c99a9813-0828-4dfc-9826-ec9794752d1a: UpdatesContent # UpdatesContent
+    c17679bd-b479-40ac-80d5-3432401fcdc0: UpdateLinkText # UpdateLinkText
+    cae79589-7081-4480-aec6-7e3deffc164a: Subtitle # Subtitle
+    cc5c3aa1-c9e5-4d5d-8abc-fd25b914aa53: HeroImage # HeroImage
+    cc536fe4-c921-4b72-ab14-b02b53076d37: BreadcrumbsProject # BreadcrumbsProject
+    cdda888a-910c-4b75-87d1-f0cac22f139f: SBDetailTextBold # SBDetailTextBold
+    ce438076-0371-4325-a970-ac6fa269b1a9: TextBoldSection # TextBoldSection
+    d2e43f27-9cc6-4cf7-a708-292c0803af09: Image # Image
+    d854a8ea-7aac-417b-9431-db3a04aab37a: SBDetailTextDoubleBold # SBDetailTextDoubleBold
+    d289268b-0cb8-4958-a938-11274d23f575: ProjectCardContent # ProjectCardContent
+    d5091483-e587-49e2-91b8-76d59c4f4de3: About # About
+    df01fa6c-8088-4dce-b7eb-9122f941ea31: InvestorSubtxt # InvestorSubtxt
+    df2591c1-b669-47cc-90db-5ec5c8b7dc49: SideBprojectsText # SideBprojectsText
+    dfb1ee03-a85f-4fd2-8180-7067243b8f8c: Teamintro # Teamintro
+    e3f09b19-41e4-44c2-8814-782a31435622: text # text
+    e5e23af0-6c62-45bf-bad7-433ef3cfab1f: Default # Default
+    e8f31144-fe30-44ef-8843-8ec5caedf2ef: TeamintroTitle # TeamintroTitle
+    e324e03f-173c-48b5-9256-a811bb52d9b3: TeamName # TeamName
+    ed059d9a-e954-4e57-a27f-fd412fe244dc: List # List
+    ed125d5a-bc95-4506-84ca-a13e0e4076f5: ProjectCards # ProjectCards
+    ed8430fe-b3db-4d71-a2d6-d81905ede24f: CTAText # CTAText
+    f3bbdaef-3e66-4e21-b64b-5c65b19c0560: Events # Events
+    f7f14baf-4abd-45fc-9d87-e0463c20bd01: TextBlockUP # TextBlockUP
+    f26755c5-8238-431a-977c-1d1b58e182b9: Simple # Simple
+    fc9db18d-0e0d-4811-bf11-99dba01610c5: Project # Project
+    fd37a919-3672-47e9-9916-a83e810dbeea: HeroContent # HeroContent
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cp-nav:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.11
+  field-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  hyper:
+    edition: standard
+    enabled: true
+    licenseKey: 5ETZG07SCPBFE6KKHA44J6OH
+    schemaVersion: 1.0.0
+  navigation:
+    edition: standard
+    enabled: true
+    licenseKey: P6U4KJMVX1E0V4UYSI1J9K2O
+    schemaVersion: 2.1.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+  sherlock:
+    edition: lite
+    enabled: true
+    schemaVersion: 4.1.0
+    settings:
+      apiKey: zibsruexfvzsrvebtfsvmjcwihujffjm
+      blowfishHashCost:
+        __assoc__:
+          -
+            - threshold
+            - 13
+      contentSecurityPolicy:
+        __assoc__:
+          -
+            - canFail
+            - true
+      contentSecurityPolicySettings:
+        __assoc__:
+          -
+            - enabled
+            - false
+          -
+            - enforce
+            - false
+          -
+            - header
+            - true
+          -
+            - directives
+            -
+              -
+                - 1
+                - default-src
+                - '''self'''
+      cooldownDuration:
+        __assoc__:
+          -
+            - threshold
+            - 300
+      cors:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      craftFilePermissions:
+        __assoc__:
+          -
+            - canFail
+            - true
+      craftFolderPermissions:
+        __assoc__:
+          -
+            - canFail
+            - true
+      craftFoldersAboveWebRoot:
+        __assoc__:
+          -
+            - canFail
+            - true
+      criticalCraftUpdates:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      criticalPluginUpdates:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      defaultDirMode:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 509
+      defaultFileMode:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 436
+      defaultTokenDuration:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 86400
+      devMode:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      disabledTests: null
+      elevatedSessionDuration:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 300
+      enableCsrfProtection:
+        __assoc__:
+          -
+            - canFail
+            - true
+      headerProtectionSettings:
+        __assoc__:
+          -
+            - enabled
+            - true
+          -
+            - headers
+            -
+              -
+                - true
+                - Referrer-Policy
+                - no-referrer-when-downgrade
+              -
+                - true
+                - Strict-Transport-Security
+                - max-age=15552000
+              -
+                - true
+                - X-Content-Type-Options
+                - nosniff
+              -
+                - true
+                - X-Frame-Options
+                - SAMEORIGIN
+              -
+                - true
+                - X-Xss-Protection
+                - '1; mode=block'
+      highSecurityLevel: false
+      httpsControlPanel:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      httpsFrontEnd:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      integrationSettings: null
+      invalidLoginWindowDuration:
+        __assoc__:
+          -
+            - threshold
+            - 3600
+      maxInvalidLogins:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 5
+      monitor: false
+      notificationEmailAddresses: stefvboven2020@outlook.com
+      phpComposerVersion:
+        __assoc__:
+          -
+            - canFail
+            - true
+      phpVersion:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - thresholds
+            -
+              __assoc__:
+                -
+                  - '8.0'
+                  - '2023-11-26'
+                -
+                  - '8.1'
+                  - '2024-11-25'
+                -
+                  - '8.2'
+                  - '2025-12-08'
+      preventUserEnumeration:
+        __assoc__:
+          -
+            - canFail
+            - true
+      referrerPolicy:
+        __assoc__:
+          -
+            - canFail
+            - true
+      rememberedUserSessionDuration:
+        __assoc__:
+          -
+            - threshold
+            - 12096004
+      requireEmailVerification:
+        __assoc__:
+          -
+            - canFail
+            - true
+      sanitizeSvgUploads:
+        __assoc__:
+          -
+            - canFail
+            - true
+      sendPoweredByHeader:
+        __assoc__:
+          -
+            - canFail
+            - false
+      strictTransportSecurity:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 15552000
+      testToEmailAddress:
+        __assoc__:
+          -
+            - canFail
+            - true
+      translationDebugOutput:
+        __assoc__:
+          -
+            - canFail
+            - true
+      useSecureCookies:
+        __assoc__:
+          -
+            - canFail
+            - true
+      userSessionDuration:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 3600
+      verificationCodeDuration:
+        __assoc__:
+          -
+            - canFail
+            - true
+          -
+            - threshold
+            - 86400
+      webAliasInSiteBaseUrl:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      webAliasInVolumeBaseUrl:
+        __assoc__:
+          -
+            - forceFail
+            - true
+      xContentTypeOptions:
+        __assoc__:
+          -
+            - canFail
+            - true
+      xFrameOptions:
+        __assoc__:
+          -
+            - canFail
+            - true
+  smith:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: team
+  live: true
+  name: Vlaskracht
+  schemaVersion: 5.0.0.20
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

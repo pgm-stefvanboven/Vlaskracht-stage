@@ -1,0 +1,215 @@
+color: null
+fieldLayouts:
+  36c5d309-3f3f-4434-b5e6-f15209455514:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 14e33b34-4a69-4e5a-95e9-f77eaafbc743
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9709c363-dd89-4d57-9fc8-1bd2a15021c3 # SmallHero
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cb07837c-840f-4a0a-beb3-7eecede4887a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4f883094-0f81-4619-8199-e3aeb1c24fab # InvestorImage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fa50abf0-092d-4cce-a970-f93eb3f0c98d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07127b5c-ad72-4cae-96a0-4c385b453000 # InvestorTopContent
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f93fe94-3edd-4278-b154-3627996c26d2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4f658b0e-c32b-4806-9008-3087ba43a23f # Investorcheckicon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ad068ee0-9268-4dcc-a295-9ae03af902e0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4156ef0f-7ed1-4ba4-b5ff-3e62593c04a3 # Investorlist
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ba1fe3ee-b4fe-4075-b59c-87e11b908f8f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e8f31144-fe30-44ef-8843-8ec5caedf2ef # TeamintroTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9e865bea-097f-45fb-8910-fabe81d26f54
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5a55a691-8902-4783-b72d-91581ea58f38 # TeamCard
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d49dc97f-a130-486c-b904-e5a0d3fcf833
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1604959c-6df1-4684-aacf-09987d70ad51 # TeamButton
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c70f375b-5806-42c3-a55d-695d1f11bcde
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 786820ae-b39f-437d-b83f-a0148aa07c09 # CTAblue
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: addfb4f3-ec42-497b-9558-00188df90bc5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6f82d04f-2d31-48c3-ab72-a5203548283e # TextColomns
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 789e6a31-6e42-4f64-ba21-9e2666d5dadd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8a9164e2-ac66-4e61-9a82-fd9953c6f96c # CTAgrey
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 03efe043-ceeb-4c5f-91f5-e05e7b81fe55
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 369aca5b-7ff0-4cfc-bfe2-08c997c58f31
+        userCondition: null
+handle: investor
+hasTitleField: true
+icon: ''
+name: Investor
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,210 @@
+{% extends '_layouts/_project.twig' %}
+
+{% set entryQuery = craft.entries().section('project') %}
+
+{% set smallhero = entry.smallhero.all() %}
+
+{% set nodes = craft.navigation.nodes('breadcrumbsproject').all() %}
+
+{% if category is defined %}
+  {% set entryQuery = entryQuery.relatedTo(category) %}
+{% endif %}
+
+{% set categories = craft.categories().group('categories').all() %}
+
+{% set textblockup = entry.textblockup.all() %}
+
+{% set textblockdown = entry.textblockdown.all() %}
+
+{% set sidebardetail = entry.sidebardetail.all() %}
+
+{% set ctablue = entry.ctablue.all() %}
+
+{% set projectcards = entry.projectcards.all() %}
+
+{% set ctagrey = entry.ctagrey.all() %}
+
+{% set project = entryQuery.all() %}
+
+{% block content %}
+  <div class="hero-small">
+    <div class="hero-projects-left">
+      <p class="hero-left-title-projects">{{ smallhero[0].title }}</p>
+    </div>
+  </div>
+
+  <div class="breadcrumbs">
+    {% for node in nodes|slice(0, 1) %}
+      <p class="breadcrumb_left">
+        <a href="{{ node.url }}" class="breadcrumb_link">{{ node.title }}</a>
+      </p>
+    {% endfor %}
+
+    <img class="vector-vpv" src="/assets/img/vector-oWn.png" />
+
+    {% for node in nodes|slice(1, 1) %}
+      <p class="breadcrumb_right">
+        <a href="{{ node.url }}" class="breadcrumb_link">{{ node.title }}</a>
+      </p>
+    {% endfor %}
+
+    <img class="vector-vpv" src="/assets/img/vector-oWn.png" />
+
+    {% for node in nodes|slice(2, 2) %}
+      <p class="breadcrumb_right">
+        <a href="{{ node.url }}" class="breadcrumb_link">{{ node.title }}</a>
+      </p>
+    {% endfor %}
+  </div>
+
+  <div class="page_content">
+    <div class="page_content_left">
+      <p class="page_content_text_up">{{ textblockup[0].text }}</p>
+
+      {% for image in project[0].image %}
+        <img class="page_content_img" src="{{ image.url }}" alt="{{ image.title }}" />
+      {% endfor %}
+
+      <p class="page_content_text_down_up">
+        {{ textblockdown[0].textsection2 }} <span class="bold">{{ textblockdown[0].textboldsection }}</span> {{ textblockdown[0].textsection }}
+      </p>
+
+      <p class="page_content_text_down_down">{{ textblockdown[0].textsection3 }}</p>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar_content">
+        <div class="sidebar_content_top">
+          {% for image in project[0].sidebarimage %}
+            <img src="{{ image.url }}" alt="{{ image.title }}" />
+          {% endfor %}
+        </div>
+
+        <div class="sidebar_content_bottom">
+          <div class="details">
+            <p class="details_title">{{ project[0].sidebartitle }}</p>
+
+            <div class="details_list">
+              <p class="details_list_item">
+                {% for image in sidebardetail[0].sbdetailicon %}
+                  <img class="details_list_item_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+                {{ sidebardetail[0].sbdetailtext }} <span class="details_list_item_text">{{ sidebardetail[0].sbdetailtextbold }}</span>
+              </p>
+
+              <p class="details_list_item">
+                {% for image in sidebardetail[1].sbdetailicon %}
+                  <img class="details_list_item_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+                {{ sidebardetail[1].sbdetailtext }} <span class="details_list_item_text">{{ sidebardetail[1].sbdetailtextbold }}</span>
+              </p>
+
+              <p class="details_list_item">
+                {% for image in sidebardetail[2].sbdetailicon %}
+                  <img class="details_list_item_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+                {{ sidebardetail[2].sbdetailtext }} <span class="details_list_item_text">{{ sidebardetail[2].sbdetailtextbold }}</span>
+              </p>
+
+              <p class="details_list_item">
+                {% for image in sidebardetail[3].sbdetailicon %}
+                  <img class="details_list_item_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+                {{ sidebardetail[3].sbdetailtext }} <span class="details_list_item_text">{{ sidebardetail[3].sbdetailtextbold }} <span class="details_list_item_text space">{{ sidebardetail[3].sbdetailtextdoublebold }}</span></span>
+              </p>
+
+              <p class="details_list_item">
+                {% for image in sidebardetail[4].sbdetailicon %}
+                  <img class="details_list_item_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+                {{ sidebardetail[4].sbdetailtext }} <span class="details_list_item_text">{{ entry.category.one().title }}</span>
+              </p>
+              <div class="highlight-type"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <p class="cta_text">{{ ctablue[0].title }}</p>
+
+        <a href="/investor" class="cta_btn">{{ ctablue[0].text }}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rectangle-9-vwp"></div>
+
+  <div class="related_projects_title">
+    <p class="related_projects_title_text">{{ project[0].detailtitle }}</p>
+  </div>
+
+  <div class="related_projects">
+    <div class="bottom_left">
+      <div class="custom-project-item">
+        <div class="custom-auto-content">
+          <div class="card_img_house"></div>
+          <div class="custom-rectangle house_three"></div>
+          {% for image in projectcards[2].projectcardicon %}
+            <img class="custom-vector" src="{{ image.url }}" alt="{{ image.title }}" />
+          {% endfor %}
+        </div>
+        <div class="custom-auto-content-text">
+          <p class="custom-location">{{ projectcards[1].projectcardintro }}</p>
+
+          <p class="custom-description">{{ projectcards[1].projectcardtitle }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom_center">
+      <div class="custom-project-item">
+        <div class="custom-auto-content">
+          <div class="card_img_wind"></div>
+          <div class="custom-rectangle wind_three"></div>
+          {% for image in projectcards[1].projectcardicon %}
+            <img class="custom-vector air" src="{{ image.url }}" alt="{{ image.title }}" />
+          {% endfor %}
+        </div>
+        <div class="custom-auto-content-text">
+          <p class="custom-location">{{ projectcards[2].projectcardintro }}</p>
+
+          <p class="custom-description">{{ projectcards[2].projectcardtitle }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom_right">
+      <div class="custom-project-item">
+        <div class="custom-auto-content">
+          <div class="card_img"></div>
+          <div class="custom-rectangle three"></div>
+          {% for image in projectcards[0].projectcardicon %}
+            <img class="custom-vector icon" src="{{ image.url }}" alt="{{ image.title }}" />
+          {% endfor %}
+        </div>
+        <div class="custom-auto-content-text">
+          <p class="custom-location">{{ projectcards[0].projectcardintro }}</p>
+          <p class="custom-description">{{ projectcards[0].projectcardtitle }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="newsletter">
+    <div class="newsletter_content">
+      {% for background in ctagrey %}
+        {% for image in background.ctabackground %}
+          <img class="newsletter_background_image" src="{{ image.url }}" alt="{{ image.title }}" />
+        {% endfor %}
+      {% endfor %}
+      <div class="newsletter_text">
+        <h2 class="newsletter_title">{{ ctagrey[0].title }}</h2>
+
+        <p class="newsletter_text">{{ ctagrey[0].text }}</p>
+
+        <a href="#" class="newsletter_btn">{{ ctagrey[0].ctabtn }}</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

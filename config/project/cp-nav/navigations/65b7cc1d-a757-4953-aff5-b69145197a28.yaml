@@ -1,0 +1,16 @@
+currLabel: 'Field Manager'
+customIcon: null
+enabled: true
+handle: field-manager
+icon: /var/www/html/vendor/verbb/field-manager/src/icon-mask.svg
+layout: 8fe4ecc2-abed-47a7-927a-f41f14458530
+level: 1
+newWindow: false
+parent: null
+prevLabel: 'Field Manager'
+prevLevel: 1
+prevParent: null
+prevUrl: field-manager
+sortOrder: 2
+type: plugin
+url: field-manager

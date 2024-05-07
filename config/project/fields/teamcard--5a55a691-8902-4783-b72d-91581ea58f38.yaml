@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: teamcard
+instructions: null
+name: TeamCard
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - c00f1a20-8763-430a-a7e6-abee6f7ff289 # TeamContent
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: textcolomns
+instructions: null
+name: TextColomns
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 0b215ba8-bb2a-4bdb-8563-54c937d5b26b # TextcolomnsInvest
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

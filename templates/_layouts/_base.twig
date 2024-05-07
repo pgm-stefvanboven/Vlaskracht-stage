@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ siteName }}</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vur4qoo.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/hero_regular.css">
+    <link rel="stylesheet" href="/assets/css/hero_small.css">
+    <link rel="stylesheet" href="/assets/css/topic_cards.css">
+    <link rel="stylesheet" href="/assets/css/updates_section.css">
+    <link rel="stylesheet" href="/assets/css/investor.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/newsletter.css">
+  </head>
+  <body class="body">
+    <header>
+      <nav class="nav_container">
+        <div class="nav__logo">
+          <a href="/"><img src="/assets/img/logo.png" alt="Vlaskracht logo" /></a>
+        </div>
+
+        <div class="navigation">
+          <div class="mini__nav__menu">
+            <ul class="mini_nav__list">
+              <li>
+                <a href="#" class="mini_nav__list__item">B2B</a>
+              </li>
+              <li>
+                <a href="#" class="mini_nav__list__item">Coöperant</a>
+              </li>
+              <li>
+                <a href="#" class="mini_nav__list__item">EnergieCafé</a>
+              </li>
+              <li>
+                <a href="#" class="mini_nav__list__item search"><img src="/assets/img/search-line.svg" alt="search icon" /></a>
+              </li>
+            </ul>
+          </div>
+
+          {% include '_layouts/_partials/_mainNav.twig' %}
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      {% block content %}
+
+      {% endblock %}
+    </main>
+
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer_content">
+          <div class="footer_content_left">
+            <div class="footer_content_left_top">
+              <div class="footer_content_left_top_left">
+                <div class="footer_content_left_top_logo">
+                  <img src="/assets/img/logo-footer.png" alt="logo Vlaskracht" />
+                </div>
+                <p class="footer_content_left_top_text">
+                  Vlaskracht cv is dé burgercoöperatie voor duurzame energie in de Leiestreek.
+                  <a href="#" class="footer_content_left_top_link">Ontdek meer</a>
+                </p>
+              </div>
+            </div>
+            <div class="footer_content_left_down">
+              <div class="footer_content_left_down_left">
+                <p class="footer_content_left_down_text">Nelson Mandelaplein 2 Hangar K - Kortrijk Weide 8500 Kortrijk</p>
+                <p class="footer_content_left_down_text_down">
+                  BE 0703.882.181 - BSS 13.09.2018
+                  <a href="info@vlaskracht.be" class="footer_content_left_down_link">info@vlaskracht.be</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer_content_middle">
+            <div class="footer_content_middle_left">
+              <p class="footer_content_middle_text">SITEMAP</p>
+              <ul class="footer_content_middle_list">
+                <li class="footer_content_middle_list_item">
+                  <a href="/" class="footer_content_middle_list_item_link">Home</a>
+                </li>
+                <li class="footer_content_middle_list_item">
+                  <a href="/investor" class="footer_content_middle_list_item_link">Coöperant worden</a>
+                </li>
+                <li class="footer_content_middle_list_item">
+                  <a href="/projects" class="footer_content_middle_list_item_link">Projecten</a>
+                </li>
+                <li class="footer_content_middle_list_item">
+                  <a href="#" class="footer_content_middle_list_item_link">Nieuws</a>
+                </li>
+                <li class="footer_content_middle_list_item">
+                  <a href="/about" class="footer_content_middle_list_item_link">Over Vlaskracht</a>
+                </li>
+                <li class="footer_content_middle_list_item">
+                  <a href="#" class="footer_content_middle_list_item_link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_content_middle_right">
+              <ul class="footer_content_middle_list_right">
+                <li class="footer_content_middle_list_item">
+                  <a href="#" class="footer_content_middle_list_item_link">B2B</a>
+                </li>
+                <li class="footer_content_middle_list_item">
+                  <a href="#" class="footer_content_middle_list_item_link">Coöperanten</a>
+                </li>
+                <li class="footer_content_middle_list_item">
+                  <a href="#" class="footer_content_middle_list_item_link">EnergieCafé</a>
+                </li>
+                <li class="footer_content_middle_list_item">
+                  <a href="#" class="footer_content_middle_list_item_link">Elektrische deelauto’s</a>
+                </li>
+                <li class="footer_content_middle_list_item">
+                  <a href="#" class="footer_content_middle_list_item_link">Statuten</a>
+                </li>
+                <li class="footer_content_middle_list_item">
+                  <a href="#" class="footer_content_middle_list_item_link">Verslagen (B)AV</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer_content_right">
+            <div class="footer_content_right_top">
+              <h3 class="footer_content_right_title">Schrijf je in voor de nieuwsbrief</h3>
+              <div class="btn_info">
+                <a href="#" class="footer_content_right_btn">schrijf me in</a>
+                <p class="footer_content_right_txt">Wij gaan zorgvuldig met uw gegevens om.</p>
+              </div>
+            </div>
+
+            <div class="footer_content_right_down">
+              <h3 class="footer_content_right_title">Volg ons op</h3>
+              <div class="footer_content_right_icons">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="facebook">
+                  <g>
+                    <path d="M28 1c1.654 0 3 1.346 3 3v24c0 1.654-1.346 3-3 3H4c-1.654 0-3-1.346-3-3V4c0-1.654 1.346-3 3-3h24m0-1H4C1.8 0 0 1.8 0 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4z"></path>
+                    <path d="M13.597 25.261h3.827v-9.262h2.553l.338-3.191h-2.891l.004-1.598c0-.832.079-1.278 1.273-1.278h1.596V6.739h-2.554c-3.067 0-4.146 1.549-4.146 4.152v1.916h-1.912v3.192h1.912v9.262z"></path>
+                  </g>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" id="linkedin">
+                  <path d="M44 1H6C3.243 1 1 3.243 1 6v38c0 2.757 2.243 5 5 5h38c2.757 0 5-2.243 5-5V6c0-2.757-2.243-5-5-5zm3 43c0 1.654-1.346 3-3 3H6c-1.654 0-3-1.346-3-3V6c0-1.654 1.346-3 3-3h38c1.654 0 3 1.346 3 3v38z"></path>
+                  <path d="M8 42h8V19H8v23zm2-21h4v19h-4V21zM12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 8c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zM31 19c-1.363 0-2.703.308-4 .916V19h-8v23h8V31c0-2.206 1.794-4 4-4s4 1.794 4 4v11h8V31c0-6.617-5.383-12-12-12zm10 21h-4v-9c0-3.309-2.691-6-6-6s-6 2.691-6 6v9h-4V21h4v2.521l1.561-1.057C27.996 21.493 29.489 21 31 21c5.514 0 10 4.486 10 10v9z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <hr class="footer-line"/>
+
+          <div class="footer_content_bottom">
+            <div class="footer_content_bottom_left">
+              <p class="footer_content_bottom_text">© 2024 Vlaskracht cv</p>
+            </div>
+
+            <div class="footer_content_bottom_right">
+              <a href="#">Cookiebeleid</a>
+              <a href="#">Privacybeleid</a>
+              <a href="#">Huidhoudelijk reglement</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

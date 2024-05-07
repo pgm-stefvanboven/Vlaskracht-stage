@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: regularhero
+instructions: null
+name: RegularHero
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - fd37a919-3672-47e9-9916-a83e810dbeea # HeroContent
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

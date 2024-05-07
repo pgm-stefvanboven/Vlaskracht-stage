@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  23817b51-a494-4bf8-bbc9-055884ba470b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6e1716f6-7bf9-419c-8e49-6b4b897ade9c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3a326286-58ad-4262-a726-8690fcc92a4e # Listitem
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e4bc16f-19e9-46a7-8d11-bf2d113822f7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2e43f27-9cc6-4cf7-a708-292c0803af09 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a4e5006-f6a6-4409-9821-0ccb5230df82
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 42a02bed-f6d4-455b-b7ac-9ef8deabb7b9
+        userCondition: null
+handle: list
+hasTitleField: true
+icon: ''
+name: List
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

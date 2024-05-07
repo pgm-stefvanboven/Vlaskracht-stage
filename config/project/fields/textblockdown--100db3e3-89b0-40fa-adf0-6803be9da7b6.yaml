@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: textblockdown
+instructions: null
+name: TextBlockDown
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - c4d52aab-5cee-4b4f-bdea-eb5cfadfa952 # TextBlockDownContent
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

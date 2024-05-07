@@ -1,0 +1,140 @@
+color: null
+fieldLayouts:
+  0f042ff1-919b-49c2-8716-df6889025119:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: eb80ad7a-4b03-4335-8571-e92cd29909a3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 024fbfa4-6deb-424c-8105-73d3cd3d5dc9 # TextUP
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4bb179ae-0692-4017-abe9-988df70d6d38
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1097ff49-88a9-4253-a3a3-01d7f9fd0963 # Investortxtblack
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e1ec7bf5-e265-4346-afb5-3d9bb36d1feb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a9813541-c4c0-4a93-941b-f72a57d1b0a8 # TextEnd
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 841a17c2-1f1a-4fb5-af0f-6536e58c21c5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 38ef4982-55d9-4ee9-b719-c09461091c0b # InvestTxtButton
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 363c61af-2b33-4029-91dc-285c8adb357b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b555ced1-4411-488b-9245-dd64e08288b7 # InvestTxtBtnIcon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 231be8da-55b4-470e-a57e-73b447df957a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ac5f2e51-f3f0-46c1-ad5a-a583cbf0ec30 # TextDown
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3660e940-a47e-43e9-b2e9-f5dbea381be8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bee507dd-08a6-4036-b9da-4fef3b3b95e4
+        userCondition: null
+handle: textcolomnsinvest
+hasTitleField: true
+icon: ''
+name: TextcolomnsInvest
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

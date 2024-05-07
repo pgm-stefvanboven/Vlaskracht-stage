@@ -1,0 +1,300 @@
+{% extends '_layouts/_base.twig' %}
+{% set entryQuery = craft.entries().section('home') %}
+
+{% set regularhero = entry.regularhero.all() %}
+
+{% set heroregularbtns = entry.heroregularbtns.all() %}
+
+{% set topiccards = entry.topiccards.all() %}
+
+{% set updatetitles = entry.updatetitles.all() %}
+
+{% set updatecards = entry.updatecards.all() %}
+
+{% set homectagrey = entry.homectagrey.all() %}
+
+{% set home = entryQuery.all() %}
+
+{% block content %}
+  <div class="hero">
+    <div class="hero-image">
+      <div class="hero-text-regul">
+        <h1 class="hero-title">
+          {{ regularhero[0].title }} <br />
+          {{ regularhero[0].subtitle }}
+          <div class="highlight-left"></div>
+          <div class="highlight-right"></div>
+        </h1>
+        <div class="hero-btns">
+          <a href="/investor" class="hero-btn">{{ heroregularbtns[0].title }}</a>
+          <a href="#" class="hero-btn-two">{{ heroregularbtns[1].title }}</a>
+          <a href="#" class="hero-link">
+            {{ heroregularbtns[2].title }}
+            {% for icon in heroregularbtns %}
+              {% for image in icon.image %}
+                <img class="hero-link-icon" src="{{ image.url }}" alt="{{ image.title }}" />
+              {% endfor %}
+            {% endfor %}
+          </a>
+          <div class="highlight-hero-home"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topics">
+    <div class="topics_left">
+      <div class="about_card">
+        <div class="about_content">
+          <h2>{{ topiccards[0].topictitle }} <span class="orange">{{ topiccards[0].boldtopictitle }}</span> {{ topiccards[0].topictitle2 }} <span class="orange">{{ topiccards[0].boldtopictitle2 }}</span> {{ topiccards[0].topictitle3 }}</h2>
+          <p>{{ topiccards[0].text }}</p>
+        </div>
+        <div class="card_right_read_more_section">
+          <div class="read_more_left">
+            <a href="/about" class="about_link">{{ topiccards[0].topiclinktxt }}</a>
+          </div>
+          <div class="read_more_middle">
+            <hr class="line_card_right" />
+          </div>
+          <div class="read_more_right">
+            <a href="/about">
+              {% for image in topiccards[0].topiclinkicon %}
+                <img class="about_link about_link_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+              {% endfor %}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topics_right">
+      <div class="topic_cards">
+        <div class="topic_card_top_left">
+          <div class="topic_card_content">
+            <h3 class="topic_card_content_title">{{ topiccards[1].topictitle }} <span class="orange">{{ topiccards[1].boldtopictitle }}</span>{{ topiccards[1].topictitle2 }}</h3>
+          </div>
+
+          <div class="read_more_section">
+            <div class="read_more_left">
+              <a href="/index" class="energy_link">{{ topiccards[1].topiclinktxt }}</a>
+            </div>
+            <div class="read_more_middle">
+              <hr class="line" />
+            </div>
+            <div class="read_more_right">
+              <a href="/index" class="energy_link">
+                {% for image in topiccards[0].topiclinkicon %}
+                  <img class="energy_link_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="topic_card_top_right">
+          <div class="topic_card_content">
+            <h3 class="topic_card_content_title_two_three space">{{ topiccards[2].topictitle }} <span class="blue">{{ topiccards[2].boldtopictitle }}</span></h3>
+          </div>
+
+          <div class="read_more_section">
+            <div class="read_more_left">
+              <a href="/index" class="energy_link">{{ topiccards[2].topiclinktxt }}</a>
+            </div>
+            <div class="read_more_middle">
+              <hr class="line_card_top_right" />
+            </div>
+            <div class="read_more_right">
+              <a href="/index" class="energy_link">
+                {% for image in topiccards[0].topiclinkicon %}
+                  <img class="energy_link_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="topic_card_down_left">
+          <div class="topic_card_content">
+            <h3 class="topic_card_content_title_two_three spaceing">{{ topiccards[3].topictitle }} <span class="orange">{{ topiccards[3].boldtopictitle }}</span>{{ topiccards[3].topictitle2 }}</h3>
+          </div>
+
+          <div class="read_more_section">
+            <div class="read_more_left">
+              <a href="/index" class="energy_link">{{ topiccards[3].topiclinktxt }}</a>
+            </div>
+            <div class="read_more_middle">
+              <hr class="line_card_down_left" />
+            </div>
+            <div class="read_more_right">
+              <a href="/index" class="energy_link">
+                {% for image in topiccards[0].topiclinkicon %}
+                  <img class="energy_link_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="topic_card_down_right">
+          <div class="topic_card_content">
+            <h3 class="topic_card_content_title space_down_right">{{ topiccards[4].topictitle }} <span class="orange">{{ topiccards[4].boldtopictitle }}</span>{{ topiccards[4].topictitle2 }}</h3>
+          </div>
+
+          <div class="read_more_section">
+            <div class="read_more_left">
+              <a href="/index" class="energy_link">{{ topiccards[4].topiclinktxt }}</a>
+            </div>
+            <div class="read_more_middle">
+              <hr class="line_card_down_right" />
+            </div>
+            <div class="read_more_right">
+              <a href="/index" class="energy_link">
+                {% for image in topiccards[0].topiclinkicon %}
+                  <img class="energy_link_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="updates_and_fb">
+    <div class="updates_and_fb_titles">
+      <div class="updates_and_fb_title_left">
+        <h2 class="updates_and_fb_title">{{ updatetitles[0].title }}</h2>
+      </div>
+
+      <div class="updates_and_fb_title_right">
+        <h2 class="updates_and_fb_title">{{ updatetitles[0].subtitle }}</h2>
+      </div>
+    </div>
+
+    <div class="updates_and_fb_content">
+      <div class="updates_and_fb_content_left">
+        <div class="updates_and_fb_content_left_cards">
+          <div class="updates_and_fb_content_card_left">
+            <div class="updates_and_fb_production_news_card">
+              <div class="updates_and_fb_production_news_card_image">
+                {% for image in updatecards[0].image %}
+                  <img src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+              </div>
+
+              <div class="updates_and_fb_production_news_card_content">
+                <span class="updates_and_fb_production_news_card_date">{{ updatecards[0].updateintro }}</span>
+                <h3 class="updates_and_fb_production_news_card_title">{{ updatecards[0].updatetitle }}</h3>
+                <p class="updates_and_fb_production_news_card_text">{{ updatecards[0].updatetext }}</p>
+
+                <div class="updates_and_fb_production_news_card_link_section">
+                  <div class="updates_and_fb_production_news_card_link_section_left">
+                    <a href="#" class="updates_and_fb_production_news_card_link">{{ updatecards[0].updatelinktext }}</a>
+                  </div>
+
+                  <div class="updates_and_fb_production_news_card_link_section_middle">
+                    <hr class="news_card_line" />
+                  </div>
+
+                  <div class="updates_and_fb_production_news_card_link_section_right">
+                    <a href="#" class="updates_and_fb_production_news_card_link">
+                      {% for image in updatecards[0].updatelinkicon %}
+                        <img class="news_card_link_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+                      {% endfor %}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="updates_and_fb_content_card_middle">
+            <div class="updates_and_fb_team_card">
+              <div class="updates_and_fb_team_card_image">
+                {% for image in updatecards[1].image %}
+                  <img src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+              </div>
+
+              <div class="updates_and_fb_team_card_content">
+                <span class="updates_and_fb_team_card_intro">{{ updatecards[1].updateintro }}</span>
+                <h3 class="updates_and_fb_team_card_title">{{ updatecards[1].updatetitle }}</h3>
+                <p class="updates_and_fb_team_card_text">{{ updatecards[1].updatetext }}</p>
+
+                <div class="updates_and_fb_team_card_link_section">
+                  <div class="updates_and_fb_team_card_link_section_right">
+                    <a href="/investor" class="updates_and_fb_team_card_link">
+                      {% for image in updatecards[1].updatelinkicon %}
+                        <img class="team_card_link_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+                      {% endfor %}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="updates_and_fb_content_card_right">
+            <div class="updates_and_fb_news_card">
+              <div class="updates_and_fb_news_card_image">
+                {% for image in updatecards[2].image %}
+                  <img src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+              </div>
+
+              <div class="updates_and_fb_news_card_content">
+                <span class="updates_and_fb_news_card_date">{{ updatecards[2].updateintro }}</span>
+                <h3 class="updates_and_fb_news_card_title">{{ updatecards[2].updatetitle }}</h3>
+                <p class="updates_and_fb_news_card_text">{{ updatecards[2].updatetext }}</p>
+
+                <div class="updates_and_fb_news_card_link_section">
+                  <div class="updates_and_fb_news_card_link_section_left">
+                    <a href="#" class="updates_and_fb_news_card_link">{{ updatecards[2].updatelinktext }}</a>
+                  </div>
+
+                  <div class="updates_and_fb_news_card_link_section_middle">
+                    <hr class="news_card_line" />
+                  </div>
+
+                  <div class="updates_and_fb_news_card_link_section_right">
+                    <a href="#" class="updates_and_fb_production_news_card_link">
+                      {% for image in updatecards[2].updatelinkicon %}
+                        <img class="news_card_link_icon" src="{{ image.url }}" alt="{{ image.title }}" />
+                      {% endfor %}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="updates_and_fb_content_right">
+        <div class="updates_and_fb_content_right">
+          <div class="content">
+            <p class="text">{{ updatecards[3].updatetext }}</p>
+            <a href="#" class="link">{{ updatecards[3].updatelinktext }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="newsletter">
+    <div class="newsletter_content">
+      {% for background in homectagrey %}
+        {% for image in background.ctabackground %}
+          <img class="newsletter_background_image" src="{{ image.url }}" alt="{{ image.title }}" />
+        {% endfor %}
+      {% endfor %}
+      <div class="newsletter_text">
+        <h2 class="newsletter_title">{{ homectagrey[0].title }}</h2>
+
+        <p class="newsletter_text">{{ homectagrey[0].text }}</p>
+
+        <a href="#" class="newsletter_btn">{{ homectagrey[0].ctabtn }}</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,95 @@
+color: null
+fieldLayouts:
+  c33f61c6-1f82-4cac-90b7-4aeedc9c3a70:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ef46b6cb-8c99-42aa-90d1-48fca5f51efb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1894f274-b687-4f43-85a6-29750c124c88 # SideBProjectsIcon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cfc2eb10-ed91-4c6c-8fe8-0e8a96c2dafd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 06b56aa8-948a-4da0-9170-f3a550d08102 # SideBprojectsNumber
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dfbc7c4e-91ee-4d3e-bddc-d66472eb013b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b7e55572-223d-4499-9ead-ed15e5ac7b94 # SideBprojectsCardsText
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d25d0ffb-7401-4ac2-bbf9-15b86571dd25
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 259d8711-d7ee-4fe4-b528-cd2d75f5ef8a
+        userCondition: null
+handle: sidebarprojectscontent
+hasTitleField: true
+icon: ''
+name: SidebarProjectsContent
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
