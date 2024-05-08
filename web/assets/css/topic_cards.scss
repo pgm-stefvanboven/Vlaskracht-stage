@@ -1,10 +1,10 @@
 .topics {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 
-    minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     align-items: flex-start;
     max-width: 1200px;
+    margin-left: 7.6%;
 }
 
 .topics_left {

@@ -54,7 +54,7 @@
 
   <div class="filters_section">
     <div class="filter_section_checkbox">
-    <div class="{{ craft.app.request.fullUri == 'projects' ? 'checkbox_check' : '' }}"></div>
+      <div class="{{ craft.app.request.fullUri == 'projects' ? 'checkbox_check' : '' }}"></div>
     </div>
     <a href="/projects" class="filter_section_link">Alle projecten</a>
     {% for category in categories %}
@@ -178,16 +178,16 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="cta-section">
-    <div class="cta-section__content">
-      <div class="cta-section__title">
-        <h2>{{ ctablue[0].title }}</h2>
-      </div>
+    <div class="cta-section">
+      <div class="cta-section__content">
+        <div class="cta-section__title">
+          <h2>{{ ctablue[0].title }}</h2>
+        </div>
 
-      <div class="cta-section__button">
-        <a href="#" class="cta-section__button__link">{{ ctablue[0].text }}</a>
+        <div class="cta-section__button">
+          <a href="#" class="cta-section__button__link">{{ ctablue[0].text }}</a>
+        </div>
       </div>
     </div>
   </div>
